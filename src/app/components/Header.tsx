@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,22 +20,20 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo - apenas texto */}
-          <a href="/" className="text-xl font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
-            </span>
-          </a>
+          <Link href="/" className="text-xl font-bold tracking-tight">
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-6 left-0 w-0 h-[2px] bg-amber-400 group-hover:w-full transition-all duration-300"></span>
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -67,14 +66,14 @@ export default function Header() {
           <div className="md:hidden border-t border-white/5 py-4">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
                   className="text-gray-400 hover:text-white hover:bg-white/5 transition-colors py-3 px-4 rounded-lg text-sm font-medium"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
