@@ -104,7 +104,8 @@ export default function Footer() {
                   </div>
                 </a>
 
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="group relative">
+                <a   href="https://wa.me/5547997336808?text=Oi%20vim%20pelo%20site%20da%20Magn%C3%A9tica"
+                   target="_blank" rel="noopener noreferrer" className="group relative">
                   <div className="absolute inset-0 bg-[#d9b35a]/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="relative w-11 h-11 flex items-center justify-center bg-white/[0.03] border border-white/[0.1] rounded-lg group-hover:border-[#d9b35a]/50 group-hover:bg-white/[0.05] transition-all duration-300">
                     <svg className="w-5 h-5 text-gray-400 group-hover:text-[#d9b35a] transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -142,7 +143,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li><a href="/contato" className="text-gray-400 hover:text-[#d9b35a] transition-colors duration-300 text-sm">Fale conosco</a></li>
                 <li><a href="mailto:contato@magnetica.com" className="text-gray-400 hover:text-[#d9b35a] transition-colors duration-300 text-sm">contato@magnetica.com</a></li>
-                <li><a href="tel:+5547999999999" className="text-gray-400 hover:text-[#d9b35a] transition-colors duration-300 text-sm">(47) 99999-9999</a></li>
+                <li><a href="tel:+5547999999999" className="text-gray-400 hover:text-[#d9b35a] transition-colors duration-300 text-sm">(47) 99293990</a></li>
                 <li><p className="text-gray-400 text-sm">Joinville, SC</p></li>
               </ul>
             </div>
