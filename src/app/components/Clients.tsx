@@ -3,17 +3,16 @@
 import { useEffect, useRef } from 'react'
 
 const clients = [
-  { name: "Nonna Desnuda", logo: "/logos/nonna.png" },
-  { name: "Quanta", logo: "/logos/quanta.png" },
-  { name: "Shell", logo: "/logos/shell.png" },
-  { name: "Rogga", logo: "/logos/rogga.png" },
-  { name: "Fredy Pneus", logo: "/logos/fredy.png" },
-  { name: "Caribor", logo: "/logos/caribor.png" },
-  { name: "Honda", logo: "/logos/honda.png" },
-  { name: "GVT", logo: "/logos/gvt.png" },
-  { name: "ActionUP", logo: "/logos/actionup.png" },
-  { name: "CDL", logo: "/logos/cdl.png" },
-  { name: "SENAI", logo: "/logos/senai.png" },
+  { name: "Cliente 1", logo: "/clients/1.png" },
+  { name: "Cliente 2", logo: "/clients/2.png" },
+  { name: "Cliente 3", logo: "/clients/3.png" },
+  { name: "Cliente 4", logo: "/clients/4.png" },
+  { name: "Cliente 5", logo: "/clients/5.png" },
+  { name: "Cliente 6", logo: "/clients/6.png" },
+  { name: "Cliente 7", logo: "/clients/7.png" },
+  { name: "Cliente 8", logo: "/clients/8.png" },
+  { name: "Cliente 9", logo: "/clients/9.png" },
+  { name: "Cliente 10", logo: "/clients/10.png" },
 ]
 
 export default function ClientsShowcase() {
@@ -27,7 +26,7 @@ export default function ClientsShowcase() {
     let scrollPosition = 0
 
     const scroll = () => {
-      scrollPosition += 0.5 // Velocidade do scroll
+      scrollPosition += 0.5
       
       if (scrollPosition >= scrollContainer.scrollWidth / 2) {
         scrollPosition = 0
@@ -97,7 +96,7 @@ export default function ClientsShowcase() {
               {[...clients, ...clients].map((client, index) => (
                 <div
                   key={`${client.name}-${index}`}
-                  className="flex-shrink-0 flex items-center justify-center h-20 lg:h-24 w-32 lg:w-40 grayscale hover:grayscale-0 opacity-50 hover:opacity-100 transition-all duration-500"
+                  className="flex-shrink-0 flex items-center justify-center h-20 lg:h-24 w-32 lg:w-40 opacity-70 hover:opacity-100 transition-opacity duration-500"
                 >
                   <img
                     src={client.logo}
@@ -112,11 +111,11 @@ export default function ClientsShowcase() {
 
         {/* Featured Cases Preview */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Case 1 */}
+          {/* Case 1 - CP Incorporações */}
           <div className="group relative h-[400px] rounded-xl overflow-hidden border border-white/[0.08] hover:border-[#d9b35a]/30 transition-all duration-500">
             <img 
-              src="/cases/case1.jpg" 
-              alt="Case 1"
+              src="/clients/cp.png" 
+              alt="CP Incorporações"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -145,11 +144,11 @@ export default function ClientsShowcase() {
             </div>
           </div>
 
-          {/* Case 2 */}
+          {/* Case 2 - Conceito Criativo */}
           <div className="group relative h-[400px] rounded-xl overflow-hidden border border-white/[0.08] hover:border-[#d9b35a]/30 transition-all duration-500">
             <img 
-              src="/cases/case2.jpg" 
-              alt="Case 2"
+              src="/clients/conceito.png" 
+              alt="Conceito Criativo"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
@@ -178,11 +177,11 @@ export default function ClientsShowcase() {
             </div>
           </div>
 
-          {/* Case 3 - Featured */}
+          {/* Case 3 - Água Marinha (Featured) */}
           <div className="group relative h-[400px] md:col-span-2 lg:col-span-1 rounded-xl overflow-hidden border border-[#d9b35a]/20 hover:border-[#d9b35a]/40 transition-all duration-500">
             <img 
-              src="/cases/case3.jpg" 
-              alt="Case 3"
+              src="/clients/marina.png" 
+              alt="Água Marinha Residencial"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
